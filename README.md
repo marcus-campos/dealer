@@ -30,8 +30,8 @@ Create a Controller. E.g:
 
 namespace App\Http\Controllers;
 
-use App\Http\Search;
 use Illuminate\Http\Request;
+use Dealer;
 
 class SearchController extends Controller
 {
@@ -43,10 +43,11 @@ class SearchController extends Controller
      */
     public function index(Request $request)
     {
-        $search = new Search();
-        return response()->json($search->resolve($request->query('q')));
+        $result = Dealer::negociate($request->query('q'));
+        return response()->api($result);
     }
 }
+
 ```
 
 Create a route. E.g:
