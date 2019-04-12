@@ -16,9 +16,9 @@ class Dealer
      *
      * @param Negociation $negociation
      */
-    public function __construct(Negociation $negociation)
+    public function __construct()
     {
-        $this->negociation = $negociation;
+        $this->negociation = new Negociation();
     }
 
     /**
