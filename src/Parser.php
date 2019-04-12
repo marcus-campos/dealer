@@ -2,6 +2,8 @@
 
 namespace MarcusCampos\Dealer;
 
+use Exception;
+
 class Parser 
 {
     /**
