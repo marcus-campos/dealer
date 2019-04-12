@@ -78,6 +78,7 @@ If you discover any security related issues, please email campos.v.marcus@gmail.
 ## Credits
 
 - [Marcus Vinícius Campos](https://github.com/marcus-campos)
+- [Samuel Libério Lobato](https://github.com/samuka182)
 - [All Contributors](../../contributors)
 
 ## License

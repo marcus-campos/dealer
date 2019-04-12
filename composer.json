@@ -18,6 +18,11 @@
             "name": "Marcus Vinícius Campos",
             "email": "campos.v.marcus@gmail.com",
             "role": "Developer"
+        },
+        {
+            "name": "Samuel Libério Lobato",
+            "email": "samuel.lobt@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
