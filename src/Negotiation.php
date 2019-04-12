@@ -43,7 +43,7 @@ class Negotiation
         $namespace = config('dealer.models.namespace') ?? 'App\\';
         $this->model = app($namespace.$this->stack['model']);
 
-        $this->relations()
+        $this->model = $this->relations()
             ->filters()
             ->limit()
             ->groupBy()
