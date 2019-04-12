@@ -36,7 +36,7 @@ class Negotiation
      * @param string $query
      * @return void
      */
-    public function negociate($query)
+    public function negociate(string $query)
     {
         $this->stack = $this->parser->parse($query);
 
