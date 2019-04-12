@@ -1,0 +1,59 @@
+{
+    "name": "marcus-campos/dealer",
+    "description": "A new way to get data from Laravel ORM (Eloquent)",
+    "keywords": [
+        "marcus-campos",
+        "dealer",
+        "Laravel",
+        "Eloquent",
+        "ORM",
+        "GraphQL",
+        "RestQL"
+    ],
+    "homepage": "https://github.com/marcus-campos/dealer",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Marcus Vinícius Campos",
+            "email": "campos.v.marcus@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.8.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MarcusCampos\\Dealer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MarcusCampos\\Dealer\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MarcusCampos\\Dealer\\DealerServiceProvider"
+            ],
+            "aliases": {
+                "Dealer": "MarcusCampos\\Dealer\\DealerFacade"
+            }
+        }
+    }
+}
