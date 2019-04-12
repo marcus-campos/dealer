@@ -15,6 +15,12 @@ You can install the package via composer:
 composer require marcus-campos/dealer
 ```
 
+Publish the package configuration: 
+
+```bash
+php artisan vendor:publish --provider="MarcusCampos\Dealer\DealerServiceProvider"
+```
+
 ## Usage
 
 Create a Controller. E.g:
