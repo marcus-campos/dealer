@@ -18,7 +18,7 @@ class Dealer
      */
     public function __construct()
     {
-        $this->negociation = new Negociation();
+        $this->negociation = new Negotiation();
     }
 
     /**
