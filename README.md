@@ -59,7 +59,7 @@ Route::get('search', "SearchController@index");
 Make a query. E.g:
 
 ```
-GET /api/search?q=user(id,name,email)->filters(filterByName('Marcus'))->orderBy(id,desc)->paginate(30)&page=1 HTTP/1.1
+GET /api/search?q=user(id,name,email,profile(id,photo,user_id))->filters(filterByName('Marcus'))->orderBy(id,desc)->paginate(30)&page=1 HTTP/1.1
 Host: localhost:8080
 cache-control: no-cache
 ```
@@ -91,7 +91,3 @@ If you discover any security related issues, please email campos.v.marcus@gmail.
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
