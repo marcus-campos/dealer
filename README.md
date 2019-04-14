@@ -59,10 +59,11 @@ Route::get('search', "SearchController@index");
 Make a query. E.g:
 
 ```
-GET /api/search?q=user(id,name,email,profile(id,photo,user_id))->filters(filterByName('Marcus'))->orderBy(id,desc)->paginate(30)&page=1 HTTP/1.1
+GET /api/search?q=user(id,name,email,profile(*))->filters(filterByName('Marcus'))->orderBy(id,desc)->paginate(30)->limit(40)&page=1 HTTP/1.1
 Host: localhost:8080
 cache-control: no-cache
 ```
+![Query GIF](https://media.giphy.com/media/XDKtfDIiNjjPsoBVz4/giphy.gif)
 
 ### Testing
 
