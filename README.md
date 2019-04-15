@@ -63,7 +63,8 @@ GET /api/search?q=user(id,name,email,profile(*))->filters(filterByName('Marcus')
 Host: localhost:8080
 cache-control: no-cache
 ```
-![Query GIF](https://media.giphy.com/media/XDKtfDIiNjjPsoBVz4/giphy.gif)
+
+<img src="https://media.giphy.com/media/XDKtfDIiNjjPsoBVz4/giphy.gif" data-canonical-src="https://media.giphy.com/media/XDKtfDIiNjjPsoBVz4/giphy.gif" width="800" height="400" />
 
 ### Testing
 
