@@ -4,6 +4,7 @@
 [![Build Status](https://img.shields.io/travis/marcus-campos/dealer/master.svg?style=flat-square)](https://travis-ci.org/marcus-campos/dealer)
 [![Quality Score](https://img.shields.io/scrutinizer/g/marcus-campos/dealer.svg?style=flat-square)](https://scrutinizer-ci.com/g/marcus-campos/dealer)
 [![Total Downloads](https://img.shields.io/packagist/dt/marcus-campos/dealer.svg?style=flat-square)](https://packagist.org/packages/marcus-campos/dealer)
+[![PHPPackages Rank](http://phppackages.org/p/marcus-campos/dealer/badge/rank.svg)](http://phppackages.org/p/marcus-campos/dealer)
 
 There is no need for much implementation, just create an endpoint for your searches and start the server of your application and write your query.
 
