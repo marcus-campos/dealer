@@ -43,7 +43,7 @@ class SearchController extends Controller
      */
     public function index(Request $request)
     {
-        $result = Dealer::negociate($request->query('q'));
+        $result = Dealer::negotiate($request->query('q'));
         return response()->api($result);
     }
 }
