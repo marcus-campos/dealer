@@ -43,7 +43,8 @@ class SearchController extends Controller
      */
     public function index(Request $request)
     {
-        $result = Dealer::negotiate($request->query('q'));
+        $query = $request->query('q');
+        $result = Dealer::negotiate($query);
         return response()->api($result);
     }
 }
@@ -87,7 +88,6 @@ If you discover any security related issues, please email campos.v.marcus@gmail.
 ## Credits
 
 - [Marcus Vinícius Campos](https://github.com/marcus-campos)
-- [Samuel Libério Lobato](https://github.com/samuka182)
 - [All Contributors](../../contributors)
 
 ## License
