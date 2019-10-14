@@ -3,32 +3,31 @@
 namespace MarcusCampos\Dealer;
 
 use MarcusCampos\Dealer\Negotiation;
+use Illuminate\Database\Eloquent\Collection;
 
 class Dealer
 {
     /**
-     * @var Negociation
+     * @var Negotiation
      */
-    private $negociation;
+    private $negotiation;
     
     /**
      * Constructor
-     *
-     * @param Negociation $negociation
      */
     public function __construct()
     {
-        $this->negociation = new Negotiation();
+        $this->negotiation = new Negotiation();
     }
 
     /**
-     * Negociator
+     * Negotiator
      *
      * @param string $query
      * @return Collection
      */
-    public function negociate(string $query)
+    public function negotiate(string $query)
     {
-        return $this->negociation->negociate($query);
+        return $this->negotiation->negotiate($query);
     }
 }

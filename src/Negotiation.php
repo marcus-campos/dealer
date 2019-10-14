@@ -3,6 +3,7 @@
 namespace MarcusCampos\Dealer;
 
 use MarcusCampos\Dealer\Parser;
+use Illuminate\Database\Eloquent\Collection;
 
 class Negotiation
 {
@@ -18,25 +19,22 @@ class Negotiation
     private $stack;
 
     /**
-     * @var Model
+     * @var \Illuminate\Database\Eloquent\Model
      */
     private $model;
 
-    /**
-     * @param array $stack
-     */
     public function __construct()
     {
         $this->parser = new Parser();
     }
 
     /**
-     * Negociate
+     * Negotiate
      *
      * @param string $query
-     * @return void
+     * @return Collection
      */
-    public function negociate(string $query)
+    public function negotiate(string $query)
     {
         $this->stack = $this->parser->parse($query);
 
@@ -56,11 +54,11 @@ class Negotiation
     /**
      * Return only selected elements
      *
-     * @param $collection
-     * @param $fields
+     * @param Collection $collection
+     * @param array $fields
      * @return Collection
      */
-    private function only($collection, $fields)
+    private function only(Collection $collection, array $fields)
     {
         $fields = array_filter($fields);
         

@@ -30,7 +30,7 @@ class Parser
             switch($key) {
                 case 'filters':
                     $response['filters'] = preg_split($this->regex, $stringBetweenParentheses);
-                    $response = $this->parseArgs('filters', $response, false);
+                    $response = $this->parseArgs('filters', $response);
                     break;
 
                 case 'orderBy':
@@ -53,7 +53,7 @@ class Parser
                     if (!$hasModel) {
                         $response['model'] = ucfirst($key);
                         $response['fields'] = preg_split($this->regex, $stringBetweenParentheses);
-                        $response = $this->parseArgs('fields',$response, true);
+                        $response = $this->parseArgs('fields',$response);
                         $hasModel = true;
                     } else {
                         throw new Exception('You have a syntax problem near "'.$key.'"');
